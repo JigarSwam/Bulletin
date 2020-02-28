@@ -1,5 +1,5 @@
 
-let api = `http://localhost:4000`
+let api = `http://newsapi.org`
 const API_KEY = '57e4c06b9dcf49ac93575f6a042c31bf'
 
 const apiHost = host => { api = host }
@@ -44,14 +44,14 @@ const query = (resource, params) => fetch(`${urlFor(resource)}?${paramsWithApiKe
 
 
 const searchArticles = (search) => {
-    query(`http://newsapi.org/v2/everything`, `q=${search}&apiKey=${API_KEY}`)
+    query(`/v2/everything`, `q=${search}&apiKey=${API_KEY}`)
 }
 
 const topHeadlines = () => {
 
 }
 
-export default {
+export {
     searchArticles,
     topHeadlines
 }
