@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import {newsArticles} from './mockAPI';
-import {popArticles} from './popNewsAPI';
 import Card from 'react-bootstrap/Card'
 
 export default function NewsArticle ({ article }) {
