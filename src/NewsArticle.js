@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {newsArticles} from './mockAPI';
-import {Fabric} from 'office-ui-fabric-react/lib/Fabric';
+import Card from 'react-bootstrap/Card'
 
 export default function NewsArticle ({ article }) {
     const style = {
@@ -8,11 +8,27 @@ export default function NewsArticle ({ article }) {
     };
 
     return (
-        <Fabric className="App">
-             <img style = {style} src={ article && article.urlToImage } ></img>
-             <a href={ article && article.url }>{ article && article.title }</a>
-             <p>{ article && article.description }</p>
-        </Fabric>
+        // <Card>
+        //   <Card.Img>
+            
+        //   </Card.Img>
+        //   <Card.body>
+        //     <Card.Title> 
+        //       //Title of Article
+        //     </Card.Title>
+        //     <Card.Subtitle>
+        //       //Name of Publisher/Site
+        //     </Card.Subtitle>
+        //     <Card.text>
+        //       //Description/Summary of Article
+        //     </Card.text>
+        //   </Card.body>
+        // </Card>
+
+        // <Card>
+        // <img style = {style} src={ article && article.urlToImage } ></img>
+        // <a href={ article && article.url }>{ article && article.title }</a>
+        // <p>{ article && article.description }</p>
+        // </Card>
     )
 }
-

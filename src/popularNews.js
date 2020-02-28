@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {newsArticles} from './mockAPI';
 import NewsArticle from './NewsArticle';
-import { PrimaryButton } from 'office-ui-fabric-react';
 
 
 const PopularNews = ({ index }) => {
