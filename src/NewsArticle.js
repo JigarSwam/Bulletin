@@ -25,10 +25,10 @@ export default function NewsArticle ({ article }) {
         //   </Card.body>
         // </Card>
 
-        // <Card>
-        // <img style = {style} src={ article && article.urlToImage } ></img>
-        // <a href={ article && article.url }>{ article && article.title }</a>
-        // <p>{ article && article.description }</p>
-        // </Card>
+        <Card>
+        <img style = {style} src={ article && article.urlToImage } ></img>
+        <a href={ article && article.url }>{ article && article.title }</a>
+        <p>{ article && article.description }</p>
+        </Card>
     )
 }
