@@ -2,7 +2,9 @@ import React from 'react'
 
 const SearchResults = (props) => {
     return (
-    <p>{props.result}</p> 
+    <div className="searchResults">
+        {props.results && props.results.map(article => <p>{article.title}</p> )}
+    </div>
     )
 }
 
