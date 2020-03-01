@@ -3,7 +3,7 @@ import SearchResults from "./SearchResults";
 import { searchArticles } from "./api";
 
 let SearchBarTemp = () => {
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
   const [query, setQuery] = useState("");
   const [articles, setArticles] = useState([]);
 
@@ -11,9 +11,7 @@ let SearchBarTemp = () => {
 
   const performQuery =  event => {
     event.preventDefault();
-    setError(null);
     searchArticles(query).then(resp => {
-      // console.log("RESP", resp.articles);
       setArticles(resp.articles)
     })
   };
@@ -31,7 +29,7 @@ let SearchBarTemp = () => {
           Search for Articles!
         </button>
       </div>
-      {error && <div className="error">{error}</div>}
+      {/* {error && <div className="error">{error}</div>} */}
       <SearchResults results={articles} />
     </form>
   );
