@@ -1,5 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![bulletin logo](src/bulletin_logo.png)
+
+
+## Introduction
+
+Welcome to Bulletin, an app designed to make staying up to date with the news easier.
+
+Bulletin was created by Jigar Swaminarayan, Saad Salman, Maya Epps, and Tigerlilly Zietz.
+
+
+## Features
+
+- Search bar
+- Popular news
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +82,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
