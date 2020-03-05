@@ -16,9 +16,6 @@ const PopularNews = ({ index }) => {
         feed.articles ? (
         <div>
             {feed.articles.map(article =>  <NewsArticle article= {article}></NewsArticle>)}
-            <NewsArticle article = {feed.articles[0]}/>
-            <NewsArticle article = {feed.articles[1]}/>
-            <NewsArticle article = {feed.articles[2]}/>
         </div>) : ""
     )
 }

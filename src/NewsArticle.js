@@ -7,7 +7,7 @@ export default function NewsArticle ({ article }) {
     };
 
     return (
-        <Card style={{ width: '50rem' }} href={ article && article.url }>
+        <Card>
           <Card.Body>
           <Card.Img variant="top" style={style} src={ article && article.urlToImage } />
             <Card.Title> 
@@ -17,8 +17,8 @@ export default function NewsArticle ({ article }) {
               { article && article.description }
             </Card.Subtitle>
             <Card.Text>
-              
             </Card.Text>
+            <Card.Link href={ article && article.url }>Link to Article</Card.Link>
           </Card.Body>
         </Card>
     )
