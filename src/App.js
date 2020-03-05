@@ -9,6 +9,7 @@ import SearchBar from "./SearchBar"
 function App() {
   return (
     <div className="App">
+      <img src="./bulletin_logo.png" alt="bulletin logo!"/>
       <SearchBar />
 
       <h1> Popular News </h1>
