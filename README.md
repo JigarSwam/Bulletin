@@ -13,9 +13,11 @@ Bulletin was created by Jigar Swaminarayan, Saad Salman, Maya Epps, and Tigerlil
 
 - Search bar
 - Popular news
+- Sources
 
-![homepage](homepage.png)
+![popularnews](popularnews.png)
 ![search](search.png)
+![sources](sources.png)
 
 
 
