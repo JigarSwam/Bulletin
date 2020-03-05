@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import SearchResults from "./SearchResults";
 import { searchArticles } from "./api";
 
-let SearchBarTemp = () => {
+let SearchBar = () => {
   // const [error, setError] = useState(null);
   const [query, setQuery] = useState("");
-  const [articles, setArticles] = useState([]);
+  const [feed, setFeed] = useState([]);
 
   const handleQueryChange = event => setQuery(event.target.value);
 
   const performQuery =  event => {
     event.preventDefault();
     searchArticles(query).then(resp => {
-      setArticles(resp.articles)
+      setFeed(resp.articles)
     })
   };
+  // console.log("FEED", feed)
 
   return (
     <form className="searchForm" onSubmit={performQuery}>
@@ -30,8 +31,9 @@ let SearchBarTemp = () => {
         </button>
       </div>
       {/* {error && <div className="error">{error}</div>} */}
-      <SearchResults results={articles} />
+      {/* <SearchResults results={articles} /> */}
+      <SearchResults results = {feed}/>
     </form>
   );
 };
-export default SearchBarTemp;
+export default SearchBar;
