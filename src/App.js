@@ -7,6 +7,8 @@ function App() {
   return (
     <div className="App">
       <SearchBar />
+      <h1> Popular News </h1>
+      <PopularNews index = {0}/>
     </div>
   );
 }
