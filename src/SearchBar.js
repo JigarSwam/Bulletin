@@ -5,14 +5,14 @@ import { searchArticles } from "./api";
 let SearchBarTemp = () => {
   // const [error, setError] = useState(null);
   const [query, setQuery] = useState("");
-  const [articles, setArticles] = useState([]);
+  const [feed, setFeed] = useState([]);
 
   const handleQueryChange = event => setQuery(event.target.value);
 
   const performQuery =  event => {
     event.preventDefault();
     searchArticles(query).then(resp => {
-      setArticles(resp.articles)
+      setFeed(resp.feed)
     })
   };
 
@@ -30,7 +30,8 @@ let SearchBarTemp = () => {
         </button>
       </div>
       {/* {error && <div className="error">{error}</div>} */}
-      <SearchResults results={articles} />
+      {/* <SearchResults results={articles} /> */}
+      {feed.articles.map(article =>  <SearchResults props = {article}/>)}
     </form>
   );
 };
