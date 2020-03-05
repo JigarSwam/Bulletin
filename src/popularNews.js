@@ -16,7 +16,6 @@ const PopularNews = ({ index }) => {
         feed.articles ? (
         <div>
             {feed.articles.map(article =>  <NewsArticle article= {article}></NewsArticle>)}
-            {/* Comment */}
         </div>) : ""
     )
 }
