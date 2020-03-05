@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import PopularNews from "./popularNews";
+import PopularNews from "./PopularNews";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchBar from "./SearchBar"
 
