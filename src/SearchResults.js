@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 const SearchResults = props => {
   const style = {
-    width: 100
+    width: 150
   };
   return (
     <div className="searchResults">
